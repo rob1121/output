@@ -8,8 +8,7 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
+        <link rel="stylesheet" href="{{URL::to("/css/app.css")}}">
         <!-- Styles -->
         <style>
             html, body {
@@ -71,23 +70,22 @@
                     @if (Auth::check())
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
+                        <a href="{{ url('/login') }}">Login <i class="fa fa-sign-in"></i></a>
+                        <a href="{{ url('/register') }}">Register <i class="fa fa-users"></i></a>
                     @endif
                 </div>
             @endif
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Output Monitoring
                 </div>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="https://laravel-news.com">Feedback</a>
+                    <a href="https://laravel-news.com">Future Developer</a>
+                    <a href="https://laravel-news.com">About</a>
                 </div>
             </div>
         </div>
