@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Output Monitoring') }}</title>
+    <title>{{ config('app.name', 'OutputMonitoring') }}</title>
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
@@ -36,7 +36,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Output Monitoring') }}
+                        <strong>Output</strong>Monitoring
                     </a>
                 </div>
 
@@ -78,19 +78,6 @@
                 </div>
             </div>
         </nav>
-
-    <div class="row-fluid">
-        <button class="toggle visible-xs">toggle</button>
-    </div>
-<div style="overflow:hidden;widht: 100vw">
-    <div class="sidebar col-md-3 col-xs-9 col-xs-pull-9" style="background: #333;color:#fff">
-        side bar
-    </div>
-    <div class="main-content col-md-9 col-md-push-3 col-xs-12" style="border:1px solid #000;position: absolute">
-        main-content
-    </div>
-</div>
-        <div class="clearfix"></div>
         @yield('content')
     </div>
 

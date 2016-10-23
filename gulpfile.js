@@ -15,10 +15,10 @@ require('laravel-elixir-vue-2');
 
 elixir(mix => {
     mix
-    .copy("node_modules/font-awesome/fonts", "public/fonts")
+    // .copy("node_modules/font-awesome/fonts", "public/fonts")
     .sass('app.scss')
    .webpack('app.js')
-        .browserSync({
-            proxy: "output_2016.me"
-        });
+    .browserSync({
+        proxy: "output_2016.me"
+    });
 });

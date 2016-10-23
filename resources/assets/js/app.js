@@ -16,5 +16,11 @@ require('./bootstrap');
 Vue.component('example', require('./components/Example.vue'));
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+
+    filters: {
+        toNumber(string) {
+            return string.replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+        }
+    }
 });
