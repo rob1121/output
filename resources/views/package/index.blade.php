@@ -1,65 +1,35 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
+    <div class="container" v-cloak>
         <div class="row">
                     <ul class="nav nav-tabs" role="tablist">
-                        <li class="active"><a href="#output" role="tab" data-toggle="tab">OUTPUT</a></li>
-                        <li><a href="#rto" role="tab" data-toggle="tab">RTO</a></li>
-                        <li><a href="#nrto" role="tab" data-toggle="tab">NRTO</a></li>
-                        <li><a href="#tray" role="tab" data-toggle="tab">TRAY</a></li>
-                        <li><a href="#mems" role="tab" data-toggle="tab">MEMs</a></li>
+                        <li class="active"><a href="#output" role="tab" data-toggle="tab" @click="getOutput('output')">OUTPUT</a></li>
+                        <li><a href="#rto" role="tab" data-toggle="tab"  @click="getOutput('rto')">RTO</a></li>
+                        <li><a href="#nrto" role="tab" data-toggle="tab"  @click="getOutput('nrto')">NRTO</a></li>
+                        <li><a href="#tray" role="tab" data-toggle="tab"  @click="getOutput('tray')">TRAY</a></li>
+                        <li><a href="#mems" role="tab" data-toggle="tab"  @click="getOutput('mems')">MEMs</a></li>
                     </ul>
                     <!-- TAB CONTENT -->
                     <div class="tab-content">
                         <div class="active tab-pane fade in" id="output">
-                            <h2>Output</h2>
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th></th>
-                                    <th class="text-center" colspan="2">Output</th>
-                                    <th class="text-center" colspan="2">Commit</th>
-                                    <th class="text-center" colspan="2">Delta</th>
-                                </tr>
-                                <tr>
-                                    <th class="text-left">Package</th>
-                                    <th class="text-right">Lot Quantity</th>
-                                    <th class="text-right">Unit Quantity</th>
-                                    <th class="text-right">Lot Quantity</th>
-                                    <th class="text-right">Unit Quantity</th>
-                                    <th class="text-right">Lot Quantity</th>
-                                    <th class="text-right">Unit Quantity</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr v-for="package in datas" :class="package.highlight_reached_commit">
-                                        <td class="text-left ">@{{package.package}}</td>
-                                        <td class="text-right">@{{package.output_lot_quantity_count | numberFormat}}</td>
-                                        <td class="text-right">@{{package.output_unit_quantity_count | numberFormat}}</td>
-                                        <td class="text-right">@{{package.commit.lot_quantity | numberFormat}}</td>
-                                        <td class="text-right">@{{package.commit.unit_quantity | numberFormat}}</td>
-                                        <td class="text-right">@{{package.delta_of_lot_quantity | numberFormat | numberSign}}</td>
-                                        <td class="text-right">@{{package.delta_of_unit_quantity | numberFormat | numberSign}}</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <output-table :output="data.output">OUTPUT</output-table>
                         </div>
+
                         <div class="tab-pane fade" id="rto">
-                            <h2>Tab2</h2>
-                            <p>Lorem ipsum.</p>
+                            <output-table :output="data.rto">RTO</output-table>
                         </div>
+
                         <div class="tab-pane fade" id="nrto">
-                            <h2>Tab3</h2>
-                            <p>Lorem ipsum.</p>
+                            <output-table :output="data.nrto">NRTO</output-table>
                         </div>
+
                         <div class="tab-pane fade" id="tray">
-                            <h2>Tab3</h2>
-                            <p>Lorem ipsum.</p>
+                            <output-table :output="data.tray">TRAY</output-table>
                         </div>
+
                         <div class="tab-pane fade" id="mems">
-                            <h2>Tab3</h2>
-                            <p>Lorem ipsum.</p>
+                            <output-table :output="data.mems">MEMs</output-table>
                         </div>
                     </div>
 

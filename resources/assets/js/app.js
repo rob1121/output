@@ -1,27 +1,23 @@
 require('./bootstrap');
 
-import {
-    numberFormat,
-    numberSign
-} from "./modules/numberFormats";
+import { getOutput } from "./modules/resources";
 
 const app = new Vue({
     el: '#app',
+
     data: {
-        datas: []
+        data: {}
     },
 
-    created() {
-      this.$http.get("/output").then(
-          response => {
-              this.datas = response.data;
-          },
-          error => console.log(error)
-      );
+    components: {
+        'output-table': require("./OutputTable.vue")
     },
 
-    filters: {
-        numberFormat,
-        numberSign
+    mounted() {
+        this.getOutput("output");
+    },
+
+    methods: {
+        getOutput // set data object
     }
 });

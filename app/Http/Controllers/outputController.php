@@ -9,11 +9,17 @@ class outputController extends Controller
     /**
      * Display a listing of the resource.
      *
+     * @param Request $request
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return response()->json(Package::all())
+        $packages = $request->line !== "output"
+            ? Package::whereLine($request->line)->get()
+            : Package::all();
+
+        $key = $request->line ? $request->line : "output";
+        return response()->json([$key => $packages])
             ->header('Access-Control-Allow-Origin', '*')
             ->header('Access-Control-Allow-Methods', 'GET');
     }

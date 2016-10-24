@@ -7986,4 +7986,7 @@ button.close {
 .package {
   text-transform: uppercase; }
 
+.container[v-cloak] {
+  display: none; }
+
 /*# sourceMappingURL=app.css.map */

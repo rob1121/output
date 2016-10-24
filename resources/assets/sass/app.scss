@@ -11,3 +11,9 @@
 
 // Personalized
 @import "partials/table";
+
+
+
+.container[v-cloak] {
+  display: none;
+}
