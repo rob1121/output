@@ -33,17 +33,15 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($packages as $package)
-                                    <tr class="{{$package->highlight_reached_commit}}">
-                                        <td class="text-left ">{{$package->package}}</td>
-                                        <td class="text-right">{{ number_format( $package->output_lot_quantity_count ) }}</td>
-                                        <td class="text-right">{{ number_format( $package->output_unit_quantity_count ) }}</td>
-                                        <td class="text-right">{{ number_format( $package->commit->lot_quantity ) }}</td>
-                                        <td class="text-right">{{ number_format( $package->commit->unit_quantity ) }}</td>
-                                        <td class="text-right">{{ number_format( $package->delta_of_lot_quantity ) }}</td>
-                                        <td class="text-right">{{ number_format( $package->delta_of_unit_quantity ) }}</td>
+                                <tr v-for="package in datas" :class="package.highlight_reached_commit">
+                                        <td class="text-left ">@{{package.package}}</td>
+                                        <td class="text-right">@{{package.output_lot_quantity_count | numberFormat}}</td>
+                                        <td class="text-right">@{{package.output_unit_quantity_count | numberFormat}}</td>
+                                        <td class="text-right">@{{package.commit.lot_quantity | numberFormat}}</td>
+                                        <td class="text-right">@{{package.commit.unit_quantity | numberFormat}}</td>
+                                        <td class="text-right">@{{package.delta_of_lot_quantity | numberFormat | numberSign}}</td>
+                                        <td class="text-right">@{{package.delta_of_unit_quantity | numberFormat | numberSign}}</td>
                                     </tr>
-                                @endforeach
                                 </tbody>
                             </table>
                         </div>

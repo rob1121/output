@@ -14,9 +14,7 @@ class packageController extends Controller
      */
     public function index()
     {
-        return view("package.index", [
-            "packages" => Package::get()
-        ]);
+        return view("package.index");
     }
 
     /**

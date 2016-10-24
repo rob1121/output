@@ -19,3 +19,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 Route::get('/package', 'packageController@index');
+Route::get('/output', 'outputController@index');

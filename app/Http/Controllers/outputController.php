@@ -1,9 +1,7 @@
-<?php
+<?php namespace App\Http\Controllers;
 
-namespace App\Http\Controllers;
-
+use App\Package;
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
 
 class outputController extends Controller
@@ -15,7 +13,9 @@ class outputController extends Controller
      */
     public function index()
     {
-        //
+        return response()->json(Package::all())
+            ->header('Access-Control-Allow-Origin', '*')
+            ->header('Access-Control-Allow-Methods', 'GET');
     }
 
     /**
