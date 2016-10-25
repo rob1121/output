@@ -7986,6 +7986,9 @@ button.close {
 .package {
   text-transform: uppercase; }
 
+.table th {
+  text-transform: uppercase; }
+
 .container[v-cloak] {
   display: none; }
 

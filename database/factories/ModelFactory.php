@@ -25,11 +25,11 @@ $factory->define(App\Commit::class, function (Faker\Generator $faker) {
 });
 
 $factory->define(App\Output::class, function (Faker\Generator $faker) {
-    $lot = $faker->numberBetween(30, 200);
+    $lot = $faker->numberBetween(1, 200);
 
     return [
         'lot_quantity' =>  $lot ,
-        'unit_quantity' =>  $faker->numberBetween(1000000, 5000000)  * $lot ,
+        'unit_quantity' =>  $faker->numberBetween(1, 50000)  * $lot ,
         'package_id' =>  function () {
              return factory(App\Package::class)->create()->id;
         } ,

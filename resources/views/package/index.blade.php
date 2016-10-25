@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container" v-cloak>
-        <div class="row">
+        <div class="row" style="position:relative">
                     <ul class="nav nav-tabs" role="tablist">
                         <li class="active"><a href="#output" role="tab" data-toggle="tab" @click="getOutput('output')">OUTPUT</a></li>
                         <li><a href="#rto" role="tab" data-toggle="tab"  @click="getOutput('rto')">RTO</a></li>
@@ -10,6 +10,10 @@
                         <li><a href="#tray" role="tab" data-toggle="tab"  @click="getOutput('tray')">TRAY</a></li>
                         <li><a href="#mems" role="tab" data-toggle="tab"  @click="getOutput('mems')">MEMs</a></li>
                     </ul>
+                    <div class="row" style="position:absolute;right: 16px;margin-top: 3px">
+                        <label for="">Filter by date:</label>
+                        <datepicker :readonly="true" format="YYYY-MM-DD" value="{{Carbon::now()->format("Y-m-d")}}"></datepicker>
+                    </div>
                     <!-- TAB CONTENT -->
                     <div class="tab-content">
                         <div class="active tab-pane fade in" id="output">

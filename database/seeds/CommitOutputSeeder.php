@@ -22,7 +22,7 @@ class CommitOutputSeeder extends Seeder
 
             $time=0;
 
-            for ($i=0;$i<24;$i++)
+            for ($i=0;$i<rand(1,24);$i++)
             {
                 factory(App\Output::class, 24)->create([
                     "package_id" => $package->id,

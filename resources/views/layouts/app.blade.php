@@ -36,7 +36,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        <strong>Output</strong>Monitoring
+                        <strong style="color: #800000">Output</strong><small style="color: rgba(128,0,0, 0.8)">Monitoring</small>
                     </a>
                 </div>
 
