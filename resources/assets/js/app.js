@@ -1,25 +1,36 @@
 require('./bootstrap');
 
-import { getOutput } from "./modules/resources";
 import store from "./vuex/store";
+
 const app = new Vue({
     el: '#app',
+
     store,
-    data: {
-        data: {}
-    },
+
     components: {
-        'output-table': require("./OutputTable.vue"),
-        'datepicker': require("./datePicker.vue")
+        'output-table': require("./components/OutputTable.vue"),
+        'datepicker': require("./components/datePicker.vue")
     },
 
-    mounted() {
-        console.log(store.state.outputStore.output_date);
-
+    created() {
         this.getOutput("output");
     },
 
+    computed: {
+        output() {
+            return store.state.outputStore.output;
+        }
+    },
+
     methods: {
-        getOutput, // set data object
+        getOutput(line) {
+
+            this.$http.get("/output", {
+                params: { line }
+            }).then(
+                response => store.commit('GET_OUTPUT', response.data),
+                error    => console.log( "error" )
+            );
+        }
     }
 });

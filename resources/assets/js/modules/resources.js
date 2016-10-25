@@ -1,10 +1,10 @@
-const getOutput = function(line = "")
+const getOutput = function(line)
 {
     this.$http.get("/output", {
         params: { line }
     }).then(
-        response => this.$set(this, 'data', response.data),
-        error    => console.log( error )
+        response => store.commit('GET_OUTPUT', response.data),
+        error    => console.log( "error" )
     );
 };
 

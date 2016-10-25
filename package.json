@@ -17,6 +17,8 @@
   },
   "dependencies": {
     "font-awesome": "^4.6.3",
-    "laravel-elixir-browsersync-official": "^1.0.0"
+    "laravel-elixir-browsersync-official": "^1.0.0",
+    "momentjs": "^1.1.17",
+    "vuex": "^2.0.0"
   }
 }

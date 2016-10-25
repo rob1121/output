@@ -110,11 +110,11 @@
 
 <template>
     <div class="datetime-picker" :style="'width:' + width">
-        {{outputStore}}
         <input
                 type="text"
+                :name="name"
                 :readonly="readonly"
-                :value="value"
+                :value="output_date"
                 @click="show = !show">
         <div class="picker-wrap" v-show="show">
             <table class="date-picker">
@@ -149,13 +149,18 @@
 </template>
 
 <script>
-    import getOutputDate from "./vuex/outputActions";
+    import {mapState} from "vuex";
+
     export default {
+        computed: mapState({
+            output_date: state => state.outputStore.output_date
+        }),
+
         props: {
             width: { type: String, default: '238px' },
             readonly: { type: Boolean, default: false },
-            value: { type: String, default: '' },
-            format: { type: String, default: 'YYYY-MM-DD' }
+            format: { type: String, default: 'YYYY-MM-DD' },
+            name: { type: String, default: '' }
         },
         data () {
             return {
@@ -172,17 +177,9 @@
             },
             show () {
                 this.update();
-            },
-        },
-
-        vuex: {
-            getters: {
-                outputStore: state => state.outputStore.output_date
-            },
-            actions: {
-                getOutputDate
             }
         },
+
         methods: {
             close () {
                 this.show = false;
@@ -206,7 +203,7 @@
                 time.setMonth(time.getMonth() + 2, 0);       // the last day of this month
                 var curDayCount = time.getDate();
                 time.setDate(1);                             // fix bug when month change
-                var value = this.value || this.stringify(new Date());
+                var value = this.output_date || this.stringify(new Date());
                 for (let i = 0; i < curDayCount; i++) {
                     let tmpTime = new Date(time.getFullYear(), time.getMonth(), i + 1);
                     let status = '';
@@ -240,7 +237,7 @@
             pickDate (index) {
                 this.show = false;
                 this.now = new Date(this.date[index].time);
-                this.value = this.stringify();
+                this.$store.dispatch('getOutputDate', this.stringify());
             },
             parse (str) {
                 var time = new Date(str);
@@ -270,9 +267,8 @@
                 }
             }
         },
-
         ready () {
-            this.now = this.parse(this.value) || new Date();
+            this.now = this.parse(this.output_date) || new Date();
             document.addEventListener('click', this.leave, false);
         },
         beforeDestroy () {

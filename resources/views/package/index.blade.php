@@ -12,28 +12,28 @@
                     </ul>
                     <div class="row" style="position:absolute;right: 16px;margin-top: 3px">
                         <label for="">Filter by date:</label>
-                        <datepicker :readonly="true" format="YYYY-MM-DD" value="{{Carbon::now()->format("Y-m-d")}}"></datepicker>
+                        <datepicker :readonly="true" format="YYYY-MM-DD"></datepicker>
                     </div>
                     <!-- TAB CONTENT -->
                     <div class="tab-content">
                         <div class="active tab-pane fade in" id="output">
-                            <output-table :output="data.output">OUTPUT</output-table>
+                            <output-table :output="output.output">OUTPUT</output-table>
                         </div>
 
                         <div class="tab-pane fade" id="rto">
-                            <output-table :output="data.rto">RTO</output-table>
+                            <output-table :output="output.rto">RTO</output-table>
                         </div>
 
                         <div class="tab-pane fade" id="nrto">
-                            <output-table :output="data.nrto">NRTO</output-table>
+                            <output-table :output="output.nrto">NRTO</output-table>
                         </div>
 
                         <div class="tab-pane fade" id="tray">
-                            <output-table :output="data.tray">TRAY</output-table>
+                            <output-table :output="output.tray">TRAY</output-table>
                         </div>
 
                         <div class="tab-pane fade" id="mems">
-                            <output-table :output="data.mems">MEMs</output-table>
+                            <output-table :output="output.mems">MEMs</output-table>
                         </div>
                     </div>
 

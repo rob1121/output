@@ -47,8 +47,8 @@
 </style>
 
 <script>
-    import { numberFormat, numberSign } from "./modules/numberFormats";
-    import { toUpper } from "./modules/stringFormats";
+    import { numberFormat, numberSign } from "./../modules/numberFormats";
+    import { toUpper } from "./../modules/stringFormats";
     export default {
         filters: {
             numberFormat,
