@@ -1,0 +1,887 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\laragon\\bin\\nodejs\\node.exe',
+1 verbose cli   'C:\\laragon\\bin\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@3.10.3
+3 info using node@v6.3.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData momentjs
+20 silly mapToRegistry name momentjs
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry data Result {
+23 silly mapToRegistry   raw: 'momentjs',
+23 silly mapToRegistry   scope: null,
+23 silly mapToRegistry   escapedName: 'momentjs',
+23 silly mapToRegistry   name: 'momentjs',
+23 silly mapToRegistry   rawSpec: '',
+23 silly mapToRegistry   spec: 'latest',
+23 silly mapToRegistry   type: 'tag' }
+24 silly mapToRegistry uri https://registry.npmjs.org/momentjs
+25 verbose request uri https://registry.npmjs.org/momentjs
+26 verbose request no auth needed
+27 info attempt registry request try #1 at 8:48:23 AM
+28 verbose request id 2e526b014d818735
+29 http request GET https://registry.npmjs.org/momentjs
+30 http 200 https://registry.npmjs.org/momentjs
+31 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+31 verbose headers   etag: '"BAKZD9KAECDSQLWWEA4BZR7WD"',
+31 verbose headers   'content-type': 'application/json',
+31 verbose headers   'content-encoding': 'gzip',
+31 verbose headers   'cache-control': 'max-age=300',
+31 verbose headers   'content-length': '6046',
+31 verbose headers   'accept-ranges': 'bytes',
+31 verbose headers   date: 'Wed, 26 Oct 2016 00:49:28 GMT',
+31 verbose headers   via: '1.1 varnish',
+31 verbose headers   age: '0',
+31 verbose headers   connection: 'keep-alive',
+31 verbose headers   'x-served-by': 'cache-hkg6823-HKG',
+31 verbose headers   'x-cache': 'MISS',
+31 verbose headers   'x-cache-hits': '0',
+31 verbose headers   'x-timer': 'S1477442968.148114,VS0,VE221',
+31 verbose headers   vary: 'Accept-Encoding' }
+32 silly get cb [ 200,
+32 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+32 silly get     etag: '"BAKZD9KAECDSQLWWEA4BZR7WD"',
+32 silly get     'content-type': 'application/json',
+32 silly get     'content-encoding': 'gzip',
+32 silly get     'cache-control': 'max-age=300',
+32 silly get     'content-length': '6046',
+32 silly get     'accept-ranges': 'bytes',
+32 silly get     date: 'Wed, 26 Oct 2016 00:49:28 GMT',
+32 silly get     via: '1.1 varnish',
+32 silly get     age: '0',
+32 silly get     connection: 'keep-alive',
+32 silly get     'x-served-by': 'cache-hkg6823-HKG',
+32 silly get     'x-cache': 'MISS',
+32 silly get     'x-cache-hits': '0',
+32 silly get     'x-timer': 'S1477442968.148114,VS0,VE221',
+32 silly get     vary: 'Accept-Encoding' } ]
+33 verbose get saving momentjs to C:\Users\tspi.mis\AppData\Roaming\npm-cache\registry.npmjs.org\momentjs\.cache.json
+34 verbose correctMkdir C:\Users\tspi.mis\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+35 silly resolveWithNewModule momentjs@1.1.17 checking installable status
+36 silly cache add args [ 'momentjs@^1.1.17', null ]
+37 verbose cache add spec momentjs@^1.1.17
+38 silly cache add parsed spec Result {
+38 silly cache add   raw: 'momentjs@^1.1.17',
+38 silly cache add   scope: null,
+38 silly cache add   escapedName: 'momentjs',
+38 silly cache add   name: 'momentjs',
+38 silly cache add   rawSpec: '^1.1.17',
+38 silly cache add   spec: '>=1.1.17 <2.0.0',
+38 silly cache add   type: 'range' }
+39 silly addNamed momentjs@>=1.1.17 <2.0.0
+40 verbose addNamed ">=1.1.17 <2.0.0" is a valid semver range for momentjs
+41 silly addNameRange { name: 'momentjs', range: '>=1.1.17 <2.0.0', hasData: false }
+42 silly mapToRegistry name momentjs
+43 silly mapToRegistry using default registry
+44 silly mapToRegistry registry https://registry.npmjs.org/
+45 silly mapToRegistry data Result {
+45 silly mapToRegistry   raw: 'momentjs',
+45 silly mapToRegistry   scope: null,
+45 silly mapToRegistry   escapedName: 'momentjs',
+45 silly mapToRegistry   name: 'momentjs',
+45 silly mapToRegistry   rawSpec: '',
+45 silly mapToRegistry   spec: 'latest',
+45 silly mapToRegistry   type: 'tag' }
+46 silly mapToRegistry uri https://registry.npmjs.org/momentjs
+47 verbose addNameRange registry:https://registry.npmjs.org/momentjs not in flight; fetching
+48 verbose get https://registry.npmjs.org/momentjs not expired, no request
+49 silly addNameRange number 2 { name: 'momentjs', range: '>=1.1.17 <2.0.0', hasData: true }
+50 silly addNameRange versions [ 'momentjs',
+50 silly addNameRange   [ '1.0.0',
+50 silly addNameRange     '1.0.1',
+50 silly addNameRange     '1.0.2',
+50 silly addNameRange     '1.0.4',
+50 silly addNameRange     '1.0.5',
+50 silly addNameRange     '1.0.6',
+50 silly addNameRange     '1.0.7',
+50 silly addNameRange     '1.0.8',
+50 silly addNameRange     '1.0.9',
+50 silly addNameRange     '1.0.10',
+50 silly addNameRange     '1.1.1',
+50 silly addNameRange     '1.1.2',
+50 silly addNameRange     '1.1.3',
+50 silly addNameRange     '1.1.4',
+50 silly addNameRange     '1.1.5',
+50 silly addNameRange     '1.1.6',
+50 silly addNameRange     '1.1.7',
+50 silly addNameRange     '1.1.8',
+50 silly addNameRange     '1.1.9',
+50 silly addNameRange     '1.1.10',
+50 silly addNameRange     '1.1.11',
+50 silly addNameRange     '1.1.12',
+50 silly addNameRange     '1.1.13',
+50 silly addNameRange     '1.1.14',
+50 silly addNameRange     '1.1.15',
+50 silly addNameRange     '1.1.16',
+50 silly addNameRange     '1.1.17' ] ]
+51 silly addNamed momentjs@1.1.17
+52 verbose addNamed "1.1.17" is a plain semver version for momentjs
+53 silly mapToRegistry name momentjs
+54 silly mapToRegistry using default registry
+55 silly mapToRegistry registry https://registry.npmjs.org/
+56 silly mapToRegistry data Result {
+56 silly mapToRegistry   raw: 'momentjs',
+56 silly mapToRegistry   scope: null,
+56 silly mapToRegistry   escapedName: 'momentjs',
+56 silly mapToRegistry   name: 'momentjs',
+56 silly mapToRegistry   rawSpec: '',
+56 silly mapToRegistry   spec: 'latest',
+56 silly mapToRegistry   type: 'tag' }
+57 silly mapToRegistry uri https://registry.npmjs.org/momentjs
+58 verbose addRemoteTarball https://registry.npmjs.org/momentjs/-/momentjs-1.1.17.tgz not in flight; adding
+59 verbose addRemoteTarball [ 'https://registry.npmjs.org/momentjs/-/momentjs-1.1.17.tgz',
+59 verbose addRemoteTarball   '959a2343e1f171ebcdf111dcdc21f0e6a67a147e' ]
+60 info retry fetch attempt 1 at 8:48:29 AM
+61 info attempt registry request try #1 at 8:48:29 AM
+62 http fetch GET https://registry.npmjs.org/momentjs/-/momentjs-1.1.17.tgz
+63 http fetch 200 https://registry.npmjs.org/momentjs/-/momentjs-1.1.17.tgz
+64 silly fetchAndShaCheck shasum 959a2343e1f171ebcdf111dcdc21f0e6a67a147e
+65 verbose addTmpTarball C:\Users\tspi.mis\AppData\Local\Temp\npm-1764-9e8e9c27\registry.npmjs.org\momentjs\-\momentjs-1.1.17.tgz not in flight; adding
+66 verbose addTmpTarball already have metadata; skipping unpack for momentjs@1.1.17
+67 verbose correctMkdir C:\Users\tspi.mis\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+68 silly cache afterAdd momentjs@1.1.17
+69 verbose afterAdd C:\Users\tspi.mis\AppData\Roaming\npm-cache\momentjs\1.1.17\package\package.json not in flight; writing
+70 verbose correctMkdir C:\Users\tspi.mis\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+71 verbose afterAdd C:\Users\tspi.mis\AppData\Roaming\npm-cache\momentjs\1.1.17\package\package.json written
+72 silly fetchNamedPackageData fsevents
+73 silly mapToRegistry name fsevents
+74 silly mapToRegistry using default registry
+75 silly mapToRegistry registry https://registry.npmjs.org/
+76 silly mapToRegistry data Result {
+76 silly mapToRegistry   raw: 'fsevents',
+76 silly mapToRegistry   scope: null,
+76 silly mapToRegistry   escapedName: 'fsevents',
+76 silly mapToRegistry   name: 'fsevents',
+76 silly mapToRegistry   rawSpec: '',
+76 silly mapToRegistry   spec: 'latest',
+76 silly mapToRegistry   type: 'tag' }
+77 silly mapToRegistry uri https://registry.npmjs.org/fsevents
+78 verbose request uri https://registry.npmjs.org/fsevents
+79 verbose request no auth needed
+80 info attempt registry request try #1 at 8:48:30 AM
+81 verbose etag "J1WMJADQEUBTKGSOYI5A2X04"
+82 http request GET https://registry.npmjs.org/fsevents
+83 http 304 https://registry.npmjs.org/fsevents
+84 verbose headers { date: 'Wed, 26 Oct 2016 00:49:29 GMT',
+84 verbose headers   via: '1.1 varnish',
+84 verbose headers   'cache-control': 'max-age=300',
+84 verbose headers   etag: '"J1WMJADQEUBTKGSOYI5A2X04"',
+84 verbose headers   age: '30',
+84 verbose headers   connection: 'keep-alive',
+84 verbose headers   'x-served-by': 'cache-hkg6823-HKG',
+84 verbose headers   'x-cache': 'HIT',
+84 verbose headers   'x-cache-hits': '2',
+84 verbose headers   'x-timer': 'S1477442969.583358,VS0,VE0',
+84 verbose headers   vary: 'Accept-Encoding' }
+85 silly get cb [ 304,
+85 silly get   { date: 'Wed, 26 Oct 2016 00:49:29 GMT',
+85 silly get     via: '1.1 varnish',
+85 silly get     'cache-control': 'max-age=300',
+85 silly get     etag: '"J1WMJADQEUBTKGSOYI5A2X04"',
+85 silly get     age: '30',
+85 silly get     connection: 'keep-alive',
+85 silly get     'x-served-by': 'cache-hkg6823-HKG',
+85 silly get     'x-cache': 'HIT',
+85 silly get     'x-cache-hits': '2',
+85 silly get     'x-timer': 'S1477442969.583358,VS0,VE0',
+85 silly get     vary: 'Accept-Encoding' } ]
+86 verbose etag https://registry.npmjs.org/fsevents from cache
+87 verbose get saving fsevents to C:\Users\tspi.mis\AppData\Roaming\npm-cache\registry.npmjs.org\fsevents\.cache.json
+88 verbose correctMkdir C:\Users\tspi.mis\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+89 silly resolveWithNewModule fsevents@1.0.14 checking installable status
+90 silly fetchNamedPackageData image-size
+91 silly mapToRegistry name image-size
+92 silly mapToRegistry using default registry
+93 silly mapToRegistry registry https://registry.npmjs.org/
+94 silly mapToRegistry data Result {
+94 silly mapToRegistry   raw: 'image-size',
+94 silly mapToRegistry   scope: null,
+94 silly mapToRegistry   escapedName: 'image-size',
+94 silly mapToRegistry   name: 'image-size',
+94 silly mapToRegistry   rawSpec: '',
+94 silly mapToRegistry   spec: 'latest',
+94 silly mapToRegistry   type: 'tag' }
+95 silly mapToRegistry uri https://registry.npmjs.org/image-size
+96 silly fetchNamedPackageData promise
+97 silly mapToRegistry name promise
+98 silly mapToRegistry using default registry
+99 silly mapToRegistry registry https://registry.npmjs.org/
+100 silly mapToRegistry data Result {
+100 silly mapToRegistry   raw: 'promise',
+100 silly mapToRegistry   scope: null,
+100 silly mapToRegistry   escapedName: 'promise',
+100 silly mapToRegistry   name: 'promise',
+100 silly mapToRegistry   rawSpec: '',
+100 silly mapToRegistry   spec: 'latest',
+100 silly mapToRegistry   type: 'tag' }
+101 silly mapToRegistry uri https://registry.npmjs.org/promise
+102 verbose request uri https://registry.npmjs.org/promise
+103 verbose request no auth needed
+104 info attempt registry request try #1 at 8:48:30 AM
+105 verbose etag "ATPPU6PEHR3VCD2FB43FYABIF"
+106 http request GET https://registry.npmjs.org/promise
+107 verbose request uri https://registry.npmjs.org/image-size
+108 verbose request no auth needed
+109 info attempt registry request try #1 at 8:48:30 AM
+110 verbose etag "C0459C4471145JY7V0ZJK7ZTQ"
+111 http request GET https://registry.npmjs.org/image-size
+112 http 200 https://registry.npmjs.org/promise
+113 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+113 verbose headers   etag: '"7R2UOLV6VXIB22GXX45XAUKTZ"',
+113 verbose headers   'content-type': 'application/json',
+113 verbose headers   'content-encoding': 'gzip',
+113 verbose headers   'cache-control': 'max-age=300',
+113 verbose headers   'content-length': '7745',
+113 verbose headers   'accept-ranges': 'bytes',
+113 verbose headers   date: 'Wed, 26 Oct 2016 00:49:30 GMT',
+113 verbose headers   via: '1.1 varnish',
+113 verbose headers   age: '181',
+113 verbose headers   connection: 'keep-alive',
+113 verbose headers   'x-served-by': 'cache-hkg6823-HKG',
+113 verbose headers   'x-cache': 'HIT',
+113 verbose headers   'x-cache-hits': '5',
+113 verbose headers   'x-timer': 'S1477442970.268017,VS0,VE0',
+113 verbose headers   vary: 'Accept-Encoding' }
+114 silly get cb [ 200,
+114 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+114 silly get     etag: '"7R2UOLV6VXIB22GXX45XAUKTZ"',
+114 silly get     'content-type': 'application/json',
+114 silly get     'content-encoding': 'gzip',
+114 silly get     'cache-control': 'max-age=300',
+114 silly get     'content-length': '7745',
+114 silly get     'accept-ranges': 'bytes',
+114 silly get     date: 'Wed, 26 Oct 2016 00:49:30 GMT',
+114 silly get     via: '1.1 varnish',
+114 silly get     age: '181',
+114 silly get     connection: 'keep-alive',
+114 silly get     'x-served-by': 'cache-hkg6823-HKG',
+114 silly get     'x-cache': 'HIT',
+114 silly get     'x-cache-hits': '5',
+114 silly get     'x-timer': 'S1477442970.268017,VS0,VE0',
+114 silly get     vary: 'Accept-Encoding' } ]
+115 verbose get saving promise to C:\Users\tspi.mis\AppData\Roaming\npm-cache\registry.npmjs.org\promise\.cache.json
+116 verbose correctMkdir C:\Users\tspi.mis\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+117 silly resolveWithNewModule promise@7.1.1 checking installable status
+118 silly cache add args [ 'promise@^7.1.1', null ]
+119 verbose cache add spec promise@^7.1.1
+120 silly cache add parsed spec Result {
+120 silly cache add   raw: 'promise@^7.1.1',
+120 silly cache add   scope: null,
+120 silly cache add   escapedName: 'promise',
+120 silly cache add   name: 'promise',
+120 silly cache add   rawSpec: '^7.1.1',
+120 silly cache add   spec: '>=7.1.1 <8.0.0',
+120 silly cache add   type: 'range' }
+121 silly addNamed promise@>=7.1.1 <8.0.0
+122 verbose addNamed ">=7.1.1 <8.0.0" is a valid semver range for promise
+123 silly addNameRange { name: 'promise', range: '>=7.1.1 <8.0.0', hasData: false }
+124 silly mapToRegistry name promise
+125 silly mapToRegistry using default registry
+126 silly mapToRegistry registry https://registry.npmjs.org/
+127 silly mapToRegistry data Result {
+127 silly mapToRegistry   raw: 'promise',
+127 silly mapToRegistry   scope: null,
+127 silly mapToRegistry   escapedName: 'promise',
+127 silly mapToRegistry   name: 'promise',
+127 silly mapToRegistry   rawSpec: '',
+127 silly mapToRegistry   spec: 'latest',
+127 silly mapToRegistry   type: 'tag' }
+128 silly mapToRegistry uri https://registry.npmjs.org/promise
+129 verbose addNameRange registry:https://registry.npmjs.org/promise not in flight; fetching
+130 verbose get https://registry.npmjs.org/promise not expired, no request
+131 silly addNameRange number 2 { name: 'promise', range: '>=7.1.1 <8.0.0', hasData: true }
+132 silly addNameRange versions [ 'promise',
+132 silly addNameRange   [ '1.2.1',
+132 silly addNameRange     '1.2.2',
+132 silly addNameRange     '1.3.0',
+132 silly addNameRange     '2.0.0',
+132 silly addNameRange     '3.0.0',
+132 silly addNameRange     '3.0.1',
+132 silly addNameRange     '3.1.0',
+132 silly addNameRange     '3.2.0',
+132 silly addNameRange     '4.0.0',
+132 silly addNameRange     '5.0.0',
+132 silly addNameRange     '6.0.0',
+132 silly addNameRange     '6.0.1',
+132 silly addNameRange     '6.1.0',
+132 silly addNameRange     '7.0.0',
+132 silly addNameRange     '7.0.1',
+132 silly addNameRange     '7.0.2',
+132 silly addNameRange     '7.0.3',
+132 silly addNameRange     '7.0.4',
+132 silly addNameRange     '7.1.0',
+132 silly addNameRange     '7.1.1' ] ]
+133 silly addNamed promise@7.1.1
+134 verbose addNamed "7.1.1" is a plain semver version for promise
+135 silly cache afterAdd promise@7.1.1
+136 verbose afterAdd C:\Users\tspi.mis\AppData\Roaming\npm-cache\promise\7.1.1\package\package.json not in flight; writing
+137 verbose correctMkdir C:\Users\tspi.mis\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+138 verbose afterAdd C:\Users\tspi.mis\AppData\Roaming\npm-cache\promise\7.1.1\package\package.json written
+139 http 200 https://registry.npmjs.org/image-size
+140 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+140 verbose headers   etag: '"DTTV411DLJUUDBU5793J14R73"',
+140 verbose headers   'content-type': 'application/json',
+140 verbose headers   'content-encoding': 'gzip',
+140 verbose headers   'cache-control': 'max-age=300',
+140 verbose headers   'content-length': '5208',
+140 verbose headers   'accept-ranges': 'bytes',
+140 verbose headers   date: 'Wed, 26 Oct 2016 00:49:34 GMT',
+140 verbose headers   via: '1.1 varnish',
+140 verbose headers   age: '284',
+140 verbose headers   connection: 'keep-alive',
+140 verbose headers   'x-served-by': 'cache-hkg6822-HKG',
+140 verbose headers   'x-cache': 'HIT',
+140 verbose headers   'x-cache-hits': '1',
+140 verbose headers   'x-timer': 'S1477442974.882540,VS0,VE0',
+140 verbose headers   vary: 'Accept-Encoding' }
+141 silly get cb [ 200,
+141 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+141 silly get     etag: '"DTTV411DLJUUDBU5793J14R73"',
+141 silly get     'content-type': 'application/json',
+141 silly get     'content-encoding': 'gzip',
+141 silly get     'cache-control': 'max-age=300',
+141 silly get     'content-length': '5208',
+141 silly get     'accept-ranges': 'bytes',
+141 silly get     date: 'Wed, 26 Oct 2016 00:49:34 GMT',
+141 silly get     via: '1.1 varnish',
+141 silly get     age: '284',
+141 silly get     connection: 'keep-alive',
+141 silly get     'x-served-by': 'cache-hkg6822-HKG',
+141 silly get     'x-cache': 'HIT',
+141 silly get     'x-cache-hits': '1',
+141 silly get     'x-timer': 'S1477442974.882540,VS0,VE0',
+141 silly get     vary: 'Accept-Encoding' } ]
+142 verbose get saving image-size to C:\Users\tspi.mis\AppData\Roaming\npm-cache\registry.npmjs.org\image-size\.cache.json
+143 verbose correctMkdir C:\Users\tspi.mis\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+144 silly resolveWithNewModule image-size@0.5.0 checking installable status
+145 silly cache add args [ 'image-size@~0.5.0', null ]
+146 verbose cache add spec image-size@~0.5.0
+147 silly cache add parsed spec Result {
+147 silly cache add   raw: 'image-size@~0.5.0',
+147 silly cache add   scope: null,
+147 silly cache add   escapedName: 'image-size',
+147 silly cache add   name: 'image-size',
+147 silly cache add   rawSpec: '~0.5.0',
+147 silly cache add   spec: '>=0.5.0 <0.6.0',
+147 silly cache add   type: 'range' }
+148 silly addNamed image-size@>=0.5.0 <0.6.0
+149 verbose addNamed ">=0.5.0 <0.6.0" is a valid semver range for image-size
+150 silly addNameRange { name: 'image-size', range: '>=0.5.0 <0.6.0', hasData: false }
+151 silly mapToRegistry name image-size
+152 silly mapToRegistry using default registry
+153 silly mapToRegistry registry https://registry.npmjs.org/
+154 silly mapToRegistry data Result {
+154 silly mapToRegistry   raw: 'image-size',
+154 silly mapToRegistry   scope: null,
+154 silly mapToRegistry   escapedName: 'image-size',
+154 silly mapToRegistry   name: 'image-size',
+154 silly mapToRegistry   rawSpec: '',
+154 silly mapToRegistry   spec: 'latest',
+154 silly mapToRegistry   type: 'tag' }
+155 silly mapToRegistry uri https://registry.npmjs.org/image-size
+156 verbose addNameRange registry:https://registry.npmjs.org/image-size not in flight; fetching
+157 verbose get https://registry.npmjs.org/image-size not expired, no request
+158 silly addNameRange number 2 { name: 'image-size', range: '>=0.5.0 <0.6.0', hasData: true }
+159 silly addNameRange versions [ 'image-size',
+159 silly addNameRange   [ '0.0.2',
+159 silly addNameRange     '0.0.3',
+159 silly addNameRange     '0.0.5',
+159 silly addNameRange     '0.1.0',
+159 silly addNameRange     '0.1.1',
+159 silly addNameRange     '0.1.2',
+159 silly addNameRange     '0.1.3',
+159 silly addNameRange     '0.1.4',
+159 silly addNameRange     '0.1.5',
+159 silly addNameRange     '0.1.6',
+159 silly addNameRange     '0.1.7',
+159 silly addNameRange     '0.1.10',
+159 silly addNameRange     '0.1.15',
+159 silly addNameRange     '0.0.16',
+159 silly addNameRange     '0.1.16',
+159 silly addNameRange     '0.1.17',
+159 silly addNameRange     '0.1.20',
+159 silly addNameRange     '0.2.1',
+159 silly addNameRange     '0.2.2',
+159 silly addNameRange     '0.2.3',
+159 silly addNameRange     '0.2.4',
+159 silly addNameRange     '0.2.5',
+159 silly addNameRange     '0.3.0',
+159 silly addNameRange     '0.3.1',
+159 silly addNameRange     '0.3.2',
+159 silly addNameRange     '0.3.3',
+159 silly addNameRange     '0.3.5',
+159 silly addNameRange     '0.4.0',
+159 silly addNameRange     '0.5.0' ] ]
+160 silly addNamed image-size@0.5.0
+161 verbose addNamed "0.5.0" is a plain semver version for image-size
+162 silly cache afterAdd image-size@0.5.0
+163 verbose afterAdd C:\Users\tspi.mis\AppData\Roaming\npm-cache\image-size\0.5.0\package\package.json not in flight; writing
+164 verbose correctMkdir C:\Users\tspi.mis\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+165 verbose afterAdd C:\Users\tspi.mis\AppData\Roaming\npm-cache\image-size\0.5.0\package\package.json written
+166 silly fetchNamedPackageData jsbn
+167 silly mapToRegistry name jsbn
+168 silly mapToRegistry using default registry
+169 silly mapToRegistry registry https://registry.npmjs.org/
+170 silly mapToRegistry data Result {
+170 silly mapToRegistry   raw: 'jsbn',
+170 silly mapToRegistry   scope: null,
+170 silly mapToRegistry   escapedName: 'jsbn',
+170 silly mapToRegistry   name: 'jsbn',
+170 silly mapToRegistry   rawSpec: '',
+170 silly mapToRegistry   spec: 'latest',
+170 silly mapToRegistry   type: 'tag' }
+171 silly mapToRegistry uri https://registry.npmjs.org/jsbn
+172 silly fetchNamedPackageData jodid25519
+173 silly mapToRegistry name jodid25519
+174 silly mapToRegistry using default registry
+175 silly mapToRegistry registry https://registry.npmjs.org/
+176 silly mapToRegistry data Result {
+176 silly mapToRegistry   raw: 'jodid25519',
+176 silly mapToRegistry   scope: null,
+176 silly mapToRegistry   escapedName: 'jodid25519',
+176 silly mapToRegistry   name: 'jodid25519',
+176 silly mapToRegistry   rawSpec: '',
+176 silly mapToRegistry   spec: 'latest',
+176 silly mapToRegistry   type: 'tag' }
+177 silly mapToRegistry uri https://registry.npmjs.org/jodid25519
+178 silly fetchNamedPackageData ecc-jsbn
+179 silly mapToRegistry name ecc-jsbn
+180 silly mapToRegistry using default registry
+181 silly mapToRegistry registry https://registry.npmjs.org/
+182 silly mapToRegistry data Result {
+182 silly mapToRegistry   raw: 'ecc-jsbn',
+182 silly mapToRegistry   scope: null,
+182 silly mapToRegistry   escapedName: 'ecc-jsbn',
+182 silly mapToRegistry   name: 'ecc-jsbn',
+182 silly mapToRegistry   rawSpec: '',
+182 silly mapToRegistry   spec: 'latest',
+182 silly mapToRegistry   type: 'tag' }
+183 silly mapToRegistry uri https://registry.npmjs.org/ecc-jsbn
+184 silly fetchNamedPackageData bcrypt-pbkdf
+185 silly mapToRegistry name bcrypt-pbkdf
+186 silly mapToRegistry using default registry
+187 silly mapToRegistry registry https://registry.npmjs.org/
+188 silly mapToRegistry data Result {
+188 silly mapToRegistry   raw: 'bcrypt-pbkdf',
+188 silly mapToRegistry   scope: null,
+188 silly mapToRegistry   escapedName: 'bcrypt-pbkdf',
+188 silly mapToRegistry   name: 'bcrypt-pbkdf',
+188 silly mapToRegistry   rawSpec: '',
+188 silly mapToRegistry   spec: 'latest',
+188 silly mapToRegistry   type: 'tag' }
+189 silly mapToRegistry uri https://registry.npmjs.org/bcrypt-pbkdf
+190 verbose request uri https://registry.npmjs.org/jsbn
+191 verbose request no auth needed
+192 info attempt registry request try #1 at 8:48:35 AM
+193 verbose etag "4BU0S3YA9NULCKR18Z5OM67WD"
+194 http request GET https://registry.npmjs.org/jsbn
+195 verbose request uri https://registry.npmjs.org/ecc-jsbn
+196 verbose request no auth needed
+197 info attempt registry request try #1 at 8:48:35 AM
+198 verbose etag "8IPAYE6OVAGXFBN0Q542LZIYT"
+199 http request GET https://registry.npmjs.org/ecc-jsbn
+200 verbose request uri https://registry.npmjs.org/jodid25519
+201 verbose request no auth needed
+202 info attempt registry request try #1 at 8:48:35 AM
+203 verbose etag "APSI4YRSNGRC822SKKV7D0GGN"
+204 http request GET https://registry.npmjs.org/jodid25519
+205 verbose request uri https://registry.npmjs.org/bcrypt-pbkdf
+206 verbose request no auth needed
+207 info attempt registry request try #1 at 8:48:35 AM
+208 verbose etag "7HHEUOVOWIFFRZD098TMO68BS"
+209 http request GET https://registry.npmjs.org/bcrypt-pbkdf
+210 http 304 https://registry.npmjs.org/jsbn
+211 verbose headers { date: 'Wed, 26 Oct 2016 00:49:35 GMT',
+211 verbose headers   via: '1.1 varnish',
+211 verbose headers   'cache-control': 'max-age=300',
+211 verbose headers   etag: '"4BU0S3YA9NULCKR18Z5OM67WD"',
+211 verbose headers   age: '152',
+211 verbose headers   connection: 'keep-alive',
+211 verbose headers   'x-served-by': 'cache-hkg6823-HKG',
+211 verbose headers   'x-cache': 'HIT',
+211 verbose headers   'x-cache-hits': '5',
+211 verbose headers   'x-timer': 'S1477442975.413940,VS0,VE0',
+211 verbose headers   vary: 'Accept-Encoding' }
+212 silly get cb [ 304,
+212 silly get   { date: 'Wed, 26 Oct 2016 00:49:35 GMT',
+212 silly get     via: '1.1 varnish',
+212 silly get     'cache-control': 'max-age=300',
+212 silly get     etag: '"4BU0S3YA9NULCKR18Z5OM67WD"',
+212 silly get     age: '152',
+212 silly get     connection: 'keep-alive',
+212 silly get     'x-served-by': 'cache-hkg6823-HKG',
+212 silly get     'x-cache': 'HIT',
+212 silly get     'x-cache-hits': '5',
+212 silly get     'x-timer': 'S1477442975.413940,VS0,VE0',
+212 silly get     vary: 'Accept-Encoding' } ]
+213 verbose etag https://registry.npmjs.org/jsbn from cache
+214 verbose get saving jsbn to C:\Users\tspi.mis\AppData\Roaming\npm-cache\registry.npmjs.org\jsbn\.cache.json
+215 verbose correctMkdir C:\Users\tspi.mis\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+216 http 304 https://registry.npmjs.org/ecc-jsbn
+217 verbose headers { date: 'Wed, 26 Oct 2016 00:49:35 GMT',
+217 verbose headers   via: '1.1 varnish',
+217 verbose headers   'cache-control': 'max-age=300',
+217 verbose headers   etag: '"8IPAYE6OVAGXFBN0Q542LZIYT"',
+217 verbose headers   age: '152',
+217 verbose headers   connection: 'keep-alive',
+217 verbose headers   'x-served-by': 'cache-hkg6822-HKG',
+217 verbose headers   'x-cache': 'HIT',
+217 verbose headers   'x-cache-hits': '6',
+217 verbose headers   'x-timer': 'S1477442975.418612,VS0,VE0',
+217 verbose headers   vary: 'Accept-Encoding' }
+218 silly get cb [ 304,
+218 silly get   { date: 'Wed, 26 Oct 2016 00:49:35 GMT',
+218 silly get     via: '1.1 varnish',
+218 silly get     'cache-control': 'max-age=300',
+218 silly get     etag: '"8IPAYE6OVAGXFBN0Q542LZIYT"',
+218 silly get     age: '152',
+218 silly get     connection: 'keep-alive',
+218 silly get     'x-served-by': 'cache-hkg6822-HKG',
+218 silly get     'x-cache': 'HIT',
+218 silly get     'x-cache-hits': '6',
+218 silly get     'x-timer': 'S1477442975.418612,VS0,VE0',
+218 silly get     vary: 'Accept-Encoding' } ]
+219 verbose etag https://registry.npmjs.org/ecc-jsbn from cache
+220 verbose get saving ecc-jsbn to C:\Users\tspi.mis\AppData\Roaming\npm-cache\registry.npmjs.org\ecc-jsbn\.cache.json
+221 verbose correctMkdir C:\Users\tspi.mis\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+222 silly resolveWithNewModule jsbn@0.1.0 checking installable status
+223 silly cache add args [ 'jsbn@~0.1.0', null ]
+224 verbose cache add spec jsbn@~0.1.0
+225 silly cache add parsed spec Result {
+225 silly cache add   raw: 'jsbn@~0.1.0',
+225 silly cache add   scope: null,
+225 silly cache add   escapedName: 'jsbn',
+225 silly cache add   name: 'jsbn',
+225 silly cache add   rawSpec: '~0.1.0',
+225 silly cache add   spec: '>=0.1.0 <0.2.0',
+225 silly cache add   type: 'range' }
+226 silly addNamed jsbn@>=0.1.0 <0.2.0
+227 verbose addNamed ">=0.1.0 <0.2.0" is a valid semver range for jsbn
+228 silly addNameRange { name: 'jsbn', range: '>=0.1.0 <0.2.0', hasData: false }
+229 silly mapToRegistry name jsbn
+230 silly mapToRegistry using default registry
+231 silly mapToRegistry registry https://registry.npmjs.org/
+232 silly mapToRegistry data Result {
+232 silly mapToRegistry   raw: 'jsbn',
+232 silly mapToRegistry   scope: null,
+232 silly mapToRegistry   escapedName: 'jsbn',
+232 silly mapToRegistry   name: 'jsbn',
+232 silly mapToRegistry   rawSpec: '',
+232 silly mapToRegistry   spec: 'latest',
+232 silly mapToRegistry   type: 'tag' }
+233 silly mapToRegistry uri https://registry.npmjs.org/jsbn
+234 verbose addNameRange registry:https://registry.npmjs.org/jsbn not in flight; fetching
+235 silly resolveWithNewModule ecc-jsbn@0.1.1 checking installable status
+236 silly cache add args [ 'ecc-jsbn@~0.1.1', null ]
+237 verbose cache add spec ecc-jsbn@~0.1.1
+238 silly cache add parsed spec Result {
+238 silly cache add   raw: 'ecc-jsbn@~0.1.1',
+238 silly cache add   scope: null,
+238 silly cache add   escapedName: 'ecc-jsbn',
+238 silly cache add   name: 'ecc-jsbn',
+238 silly cache add   rawSpec: '~0.1.1',
+238 silly cache add   spec: '>=0.1.1 <0.2.0',
+238 silly cache add   type: 'range' }
+239 silly addNamed ecc-jsbn@>=0.1.1 <0.2.0
+240 verbose addNamed ">=0.1.1 <0.2.0" is a valid semver range for ecc-jsbn
+241 silly addNameRange { name: 'ecc-jsbn', range: '>=0.1.1 <0.2.0', hasData: false }
+242 silly mapToRegistry name ecc-jsbn
+243 silly mapToRegistry using default registry
+244 silly mapToRegistry registry https://registry.npmjs.org/
+245 silly mapToRegistry data Result {
+245 silly mapToRegistry   raw: 'ecc-jsbn',
+245 silly mapToRegistry   scope: null,
+245 silly mapToRegistry   escapedName: 'ecc-jsbn',
+245 silly mapToRegistry   name: 'ecc-jsbn',
+245 silly mapToRegistry   rawSpec: '',
+245 silly mapToRegistry   spec: 'latest',
+245 silly mapToRegistry   type: 'tag' }
+246 silly mapToRegistry uri https://registry.npmjs.org/ecc-jsbn
+247 verbose addNameRange registry:https://registry.npmjs.org/ecc-jsbn not in flight; fetching
+248 verbose get https://registry.npmjs.org/jsbn not expired, no request
+249 silly addNameRange number 2 { name: 'jsbn', range: '>=0.1.0 <0.2.0', hasData: true }
+250 silly addNameRange versions [ 'jsbn', [ '0.0.0', '0.1.0' ] ]
+251 silly addNamed jsbn@0.1.0
+252 verbose addNamed "0.1.0" is a plain semver version for jsbn
+253 verbose get https://registry.npmjs.org/ecc-jsbn not expired, no request
+254 silly addNameRange number 2 { name: 'ecc-jsbn', range: '>=0.1.1 <0.2.0', hasData: true }
+255 silly addNameRange versions [ 'ecc-jsbn', [ '0.0.1', '0.1.1' ] ]
+256 silly addNamed ecc-jsbn@0.1.1
+257 verbose addNamed "0.1.1" is a plain semver version for ecc-jsbn
+258 silly cache afterAdd ecc-jsbn@0.1.1
+259 verbose afterAdd C:\Users\tspi.mis\AppData\Roaming\npm-cache\ecc-jsbn\0.1.1\package\package.json not in flight; writing
+260 verbose correctMkdir C:\Users\tspi.mis\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+261 verbose afterAdd C:\Users\tspi.mis\AppData\Roaming\npm-cache\ecc-jsbn\0.1.1\package\package.json written
+262 silly cache afterAdd jsbn@0.1.0
+263 verbose afterAdd C:\Users\tspi.mis\AppData\Roaming\npm-cache\jsbn\0.1.0\package\package.json not in flight; writing
+264 verbose correctMkdir C:\Users\tspi.mis\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+265 verbose afterAdd C:\Users\tspi.mis\AppData\Roaming\npm-cache\jsbn\0.1.0\package\package.json written
+266 http 304 https://registry.npmjs.org/jodid25519
+267 verbose headers { date: 'Wed, 26 Oct 2016 00:49:39 GMT',
+267 verbose headers   via: '1.1 varnish',
+267 verbose headers   'cache-control': 'max-age=300',
+267 verbose headers   etag: '"APSI4YRSNGRC822SKKV7D0GGN"',
+267 verbose headers   age: '156',
+267 verbose headers   connection: 'keep-alive',
+267 verbose headers   'x-served-by': 'cache-hkg6823-HKG',
+267 verbose headers   'x-cache': 'HIT',
+267 verbose headers   'x-cache-hits': '6',
+267 verbose headers   'x-timer': 'S1477442979.958189,VS0,VE0',
+267 verbose headers   vary: 'Accept-Encoding' }
+268 silly get cb [ 304,
+268 silly get   { date: 'Wed, 26 Oct 2016 00:49:39 GMT',
+268 silly get     via: '1.1 varnish',
+268 silly get     'cache-control': 'max-age=300',
+268 silly get     etag: '"APSI4YRSNGRC822SKKV7D0GGN"',
+268 silly get     age: '156',
+268 silly get     connection: 'keep-alive',
+268 silly get     'x-served-by': 'cache-hkg6823-HKG',
+268 silly get     'x-cache': 'HIT',
+268 silly get     'x-cache-hits': '6',
+268 silly get     'x-timer': 'S1477442979.958189,VS0,VE0',
+268 silly get     vary: 'Accept-Encoding' } ]
+269 verbose etag https://registry.npmjs.org/jodid25519 from cache
+270 verbose get saving jodid25519 to C:\Users\tspi.mis\AppData\Roaming\npm-cache\registry.npmjs.org\jodid25519\.cache.json
+271 verbose correctMkdir C:\Users\tspi.mis\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+272 silly resolveWithNewModule jodid25519@1.0.2 checking installable status
+273 silly cache add args [ 'jodid25519@^1.0.0', null ]
+274 verbose cache add spec jodid25519@^1.0.0
+275 silly cache add parsed spec Result {
+275 silly cache add   raw: 'jodid25519@^1.0.0',
+275 silly cache add   scope: null,
+275 silly cache add   escapedName: 'jodid25519',
+275 silly cache add   name: 'jodid25519',
+275 silly cache add   rawSpec: '^1.0.0',
+275 silly cache add   spec: '>=1.0.0 <2.0.0',
+275 silly cache add   type: 'range' }
+276 silly addNamed jodid25519@>=1.0.0 <2.0.0
+277 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for jodid25519
+278 silly addNameRange { name: 'jodid25519', range: '>=1.0.0 <2.0.0', hasData: false }
+279 silly mapToRegistry name jodid25519
+280 silly mapToRegistry using default registry
+281 silly mapToRegistry registry https://registry.npmjs.org/
+282 silly mapToRegistry data Result {
+282 silly mapToRegistry   raw: 'jodid25519',
+282 silly mapToRegistry   scope: null,
+282 silly mapToRegistry   escapedName: 'jodid25519',
+282 silly mapToRegistry   name: 'jodid25519',
+282 silly mapToRegistry   rawSpec: '',
+282 silly mapToRegistry   spec: 'latest',
+282 silly mapToRegistry   type: 'tag' }
+283 silly mapToRegistry uri https://registry.npmjs.org/jodid25519
+284 verbose addNameRange registry:https://registry.npmjs.org/jodid25519 not in flight; fetching
+285 verbose get https://registry.npmjs.org/jodid25519 not expired, no request
+286 silly addNameRange number 2 { name: 'jodid25519', range: '>=1.0.0 <2.0.0', hasData: true }
+287 silly addNameRange versions [ 'jodid25519', [ '1.0.0', '1.0.1', '1.0.2' ] ]
+288 silly addNamed jodid25519@1.0.2
+289 verbose addNamed "1.0.2" is a plain semver version for jodid25519
+290 http 304 https://registry.npmjs.org/bcrypt-pbkdf
+291 verbose headers { date: 'Wed, 26 Oct 2016 00:49:39 GMT',
+291 verbose headers   via: '1.1 varnish',
+291 verbose headers   'cache-control': 'max-age=300',
+291 verbose headers   etag: '"7HHEUOVOWIFFRZD098TMO68BS"',
+291 verbose headers   age: '157',
+291 verbose headers   connection: 'keep-alive',
+291 verbose headers   'x-served-by': 'cache-hkg6824-HKG',
+291 verbose headers   'x-cache': 'HIT',
+291 verbose headers   'x-cache-hits': '4',
+291 verbose headers   'x-timer': 'S1477442979.977328,VS0,VE0',
+291 verbose headers   vary: 'Accept-Encoding' }
+292 silly get cb [ 304,
+292 silly get   { date: 'Wed, 26 Oct 2016 00:49:39 GMT',
+292 silly get     via: '1.1 varnish',
+292 silly get     'cache-control': 'max-age=300',
+292 silly get     etag: '"7HHEUOVOWIFFRZD098TMO68BS"',
+292 silly get     age: '157',
+292 silly get     connection: 'keep-alive',
+292 silly get     'x-served-by': 'cache-hkg6824-HKG',
+292 silly get     'x-cache': 'HIT',
+292 silly get     'x-cache-hits': '4',
+292 silly get     'x-timer': 'S1477442979.977328,VS0,VE0',
+292 silly get     vary: 'Accept-Encoding' } ]
+293 verbose etag https://registry.npmjs.org/bcrypt-pbkdf from cache
+294 verbose get saving bcrypt-pbkdf to C:\Users\tspi.mis\AppData\Roaming\npm-cache\registry.npmjs.org\bcrypt-pbkdf\.cache.json
+295 verbose correctMkdir C:\Users\tspi.mis\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+296 silly resolveWithNewModule bcrypt-pbkdf@1.0.0 checking installable status
+297 silly cache add args [ 'bcrypt-pbkdf@^1.0.0', null ]
+298 verbose cache add spec bcrypt-pbkdf@^1.0.0
+299 silly cache add parsed spec Result {
+299 silly cache add   raw: 'bcrypt-pbkdf@^1.0.0',
+299 silly cache add   scope: null,
+299 silly cache add   escapedName: 'bcrypt-pbkdf',
+299 silly cache add   name: 'bcrypt-pbkdf',
+299 silly cache add   rawSpec: '^1.0.0',
+299 silly cache add   spec: '>=1.0.0 <2.0.0',
+299 silly cache add   type: 'range' }
+300 silly addNamed bcrypt-pbkdf@>=1.0.0 <2.0.0
+301 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for bcrypt-pbkdf
+302 silly addNameRange { name: 'bcrypt-pbkdf', range: '>=1.0.0 <2.0.0', hasData: false }
+303 silly mapToRegistry name bcrypt-pbkdf
+304 silly mapToRegistry using default registry
+305 silly mapToRegistry registry https://registry.npmjs.org/
+306 silly mapToRegistry data Result {
+306 silly mapToRegistry   raw: 'bcrypt-pbkdf',
+306 silly mapToRegistry   scope: null,
+306 silly mapToRegistry   escapedName: 'bcrypt-pbkdf',
+306 silly mapToRegistry   name: 'bcrypt-pbkdf',
+306 silly mapToRegistry   rawSpec: '',
+306 silly mapToRegistry   spec: 'latest',
+306 silly mapToRegistry   type: 'tag' }
+307 silly mapToRegistry uri https://registry.npmjs.org/bcrypt-pbkdf
+308 verbose addNameRange registry:https://registry.npmjs.org/bcrypt-pbkdf not in flight; fetching
+309 verbose get https://registry.npmjs.org/bcrypt-pbkdf not expired, no request
+310 silly addNameRange number 2 { name: 'bcrypt-pbkdf', range: '>=1.0.0 <2.0.0', hasData: true }
+311 silly addNameRange versions [ 'bcrypt-pbkdf', [ '1.0.0' ] ]
+312 silly addNamed bcrypt-pbkdf@1.0.0
+313 verbose addNamed "1.0.0" is a plain semver version for bcrypt-pbkdf
+314 silly cache afterAdd jodid25519@1.0.2
+315 verbose afterAdd C:\Users\tspi.mis\AppData\Roaming\npm-cache\jodid25519\1.0.2\package\package.json not in flight; writing
+316 verbose correctMkdir C:\Users\tspi.mis\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+317 verbose afterAdd C:\Users\tspi.mis\AppData\Roaming\npm-cache\jodid25519\1.0.2\package\package.json written
+318 silly cache afterAdd bcrypt-pbkdf@1.0.0
+319 verbose afterAdd C:\Users\tspi.mis\AppData\Roaming\npm-cache\bcrypt-pbkdf\1.0.0\package\package.json not in flight; writing
+320 verbose correctMkdir C:\Users\tspi.mis\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+321 verbose afterAdd C:\Users\tspi.mis\AppData\Roaming\npm-cache\bcrypt-pbkdf\1.0.0\package\package.json written
+322 silly fetchOtherPackageData webpack-stream@github:jeroennoten/webpack-stream#patch-1
+323 silly cache add args [ 'webpack-stream@github:jeroennoten/webpack-stream#patch-1',
+323 silly cache add   null ]
+324 verbose cache add spec webpack-stream@github:jeroennoten/webpack-stream#patch-1
+325 silly cache add parsed spec Result {
+325 silly cache add   raw: 'webpack-stream@github:jeroennoten/webpack-stream#patch-1',
+325 silly cache add   scope: null,
+325 silly cache add   escapedName: 'webpack-stream',
+325 silly cache add   name: 'webpack-stream',
+325 silly cache add   rawSpec: 'github:jeroennoten/webpack-stream#patch-1',
+325 silly cache add   spec: 'github:jeroennoten/webpack-stream#patch-1',
+325 silly cache add   type: 'hosted',
+325 silly cache add   hosted:
+325 silly cache add    { type: 'github',
+325 silly cache add      ssh: 'git@github.com:jeroennoten/webpack-stream.git#patch-1',
+325 silly cache add      sshUrl: 'git+ssh://git@github.com/jeroennoten/webpack-stream.git#patch-1',
+325 silly cache add      httpsUrl: 'git+https://github.com/jeroennoten/webpack-stream.git#patch-1',
+325 silly cache add      gitUrl: 'git://github.com/jeroennoten/webpack-stream.git#patch-1',
+325 silly cache add      shortcut: 'github:jeroennoten/webpack-stream#patch-1',
+325 silly cache add      directUrl: 'https://raw.githubusercontent.com/jeroennoten/webpack-stream/patch-1/package.json' } }
+326 verbose addRemoteGit caching github:jeroennoten/webpack-stream#patch-1
+327 verbose addRemoteGit jeroennoten/webpack-stream#patch-1 is a repository hosted by github
+328 silly tryGitProto attempting to clone git://github.com/jeroennoten/webpack-stream.git#patch-1
+329 silly tryClone cloning jeroennoten/webpack-stream#patch-1 via git://github.com/jeroennoten/webpack-stream.git#patch-1
+330 verbose tryClone git-github-com-jeroennoten-webpack-stream-git-patch-1-5e1462f4 not in flight; caching
+331 verbose correctMkdir C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes correctMkdir not in flight; initializing
+332 info git [ 'clone',
+332 info git   '--template=C:\\Users\\tspi.mis\\AppData\\Roaming\\npm-cache\\_git-remotes\\_templates',
+332 info git   '--mirror',
+332 info git   'git://github.com/jeroennoten/webpack-stream.git',
+332 info git   'C:\\Users\\tspi.mis\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-github-com-jeroennoten-webpack-stream-git-patch-1-5e1462f4' ]
+333 verbose git clone --template=C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git://github.com/jeroennoten/webpack-stream.git C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\git-github-com-jeroennoten-webpack-stream-git-patch-1-5e1462f4: Cloning into bare repository 'C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\git-github-com-jeroennoten-webpack-stream-git-patch-1-5e1462f4'...
+333 verbose git clone --template=C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git://github.com/jeroennoten/webpack-stream.git C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\git-github-com-jeroennoten-webpack-stream-git-patch-1-5e1462f4: fatal: unable to connect to github.com:
+333 verbose git clone --template=C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git://github.com/jeroennoten/webpack-stream.git C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\git-github-com-jeroennoten-webpack-stream-git-patch-1-5e1462f4: github.com[0: 192.30.253.113]: errno=No error
+333 verbose git clone --template=C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git://github.com/jeroennoten/webpack-stream.git C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\git-github-com-jeroennoten-webpack-stream-git-patch-1-5e1462f4: github.com[1: 192.30.253.112]: errno=No error
+334 silly tryHTTPS attempting to clone git+https://github.com/jeroennoten/webpack-stream.git#patch-1
+335 silly tryClone cloning jeroennoten/webpack-stream#patch-1 via git+https://github.com/jeroennoten/webpack-stream.git#patch-1
+336 verbose tryClone git-https-github-com-jeroennoten-webpack-stream-git-patch-1-60be6dae not in flight; caching
+337 verbose correctMkdir C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes correctMkdir not in flight; initializing
+338 info git [ 'clone',
+338 info git   '--template=C:\\Users\\tspi.mis\\AppData\\Roaming\\npm-cache\\_git-remotes\\_templates',
+338 info git   '--mirror',
+338 info git   'https://github.com/jeroennoten/webpack-stream.git',
+338 info git   'C:\\Users\\tspi.mis\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-https-github-com-jeroennoten-webpack-stream-git-patch-1-60be6dae' ]
+339 verbose git clone --template=C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://github.com/jeroennoten/webpack-stream.git C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\git-https-github-com-jeroennoten-webpack-stream-git-patch-1-60be6dae: Cloning into bare repository 'C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\git-https-github-com-jeroennoten-webpack-stream-git-patch-1-60be6dae'...
+339 verbose git clone --template=C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror https://github.com/jeroennoten/webpack-stream.git C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\git-https-github-com-jeroennoten-webpack-stream-git-patch-1-60be6dae: fatal: unable to access 'https://github.com/jeroennoten/webpack-stream.git/': SSL read: error:00000000:lib(0):func(0):reason(0), errno 10054
+340 silly trySSH attempting to clone git@github.com:jeroennoten/webpack-stream.git#patch-1
+341 silly tryClone cloning jeroennoten/webpack-stream#patch-1 via git@github.com:jeroennoten/webpack-stream.git#patch-1
+342 verbose tryClone git-github-com-jeroennoten-webpack-stream-git-patch-1-b24e730a not in flight; caching
+343 verbose correctMkdir C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes correctMkdir not in flight; initializing
+344 info git [ 'clone',
+344 info git   '--template=C:\\Users\\tspi.mis\\AppData\\Roaming\\npm-cache\\_git-remotes\\_templates',
+344 info git   '--mirror',
+344 info git   'git@github.com:jeroennoten/webpack-stream.git',
+344 info git   'C:\\Users\\tspi.mis\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-github-com-jeroennoten-webpack-stream-git-patch-1-b24e730a' ]
+345 error git clone --template=C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:jeroennoten/webpack-stream.git C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\git-github-com-jeroennoten-webpack-stream-git-patch-1-b24e730a: Cloning into bare repository 'C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\git-github-com-jeroennoten-webpack-stream-git-patch-1-b24e730a'...
+345 error git clone --template=C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:jeroennoten/webpack-stream.git C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\git-github-com-jeroennoten-webpack-stream-git-patch-1-b24e730a: Permission denied (publickey).
+345 error git clone --template=C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:jeroennoten/webpack-stream.git C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\git-github-com-jeroennoten-webpack-stream-git-patch-1-b24e730a: fatal: Could not read from remote repository.
+345 error git clone --template=C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:jeroennoten/webpack-stream.git C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\git-github-com-jeroennoten-webpack-stream-git-patch-1-b24e730a:
+345 error git clone --template=C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:jeroennoten/webpack-stream.git C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\git-github-com-jeroennoten-webpack-stream-git-patch-1-b24e730a: Please make sure you have the correct access rights
+345 error git clone --template=C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:jeroennoten/webpack-stream.git C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\git-github-com-jeroennoten-webpack-stream-git-patch-1-b24e730a: and the repository exists.
+346 silly fetchPackageMetaData Error: Command failed: git -c core.longpaths=true clone --template=C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:jeroennoten/webpack-stream.git C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\git-github-com-jeroennoten-webpack-stream-git-patch-1-b24e730a
+346 silly fetchPackageMetaData Cloning into bare repository 'C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\git-github-com-jeroennoten-webpack-stream-git-patch-1-b24e730a'...
+346 silly fetchPackageMetaData Permission denied (publickey).
+346 silly fetchPackageMetaData fatal: Could not read from remote repository.
+346 silly fetchPackageMetaData
+346 silly fetchPackageMetaData Please make sure you have the correct access rights
+346 silly fetchPackageMetaData and the repository exists.
+346 silly fetchPackageMetaData
+346 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:202:12)
+346 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+346 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+346 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:852:16)
+346 silly fetchPackageMetaData     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
+346 silly fetchPackageMetaData  error for webpack-stream@github:jeroennoten/webpack-stream#patch-1 { Error: Command failed: git -c core.longpaths=true clone --template=C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:jeroennoten/webpack-stream.git C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\git-github-com-jeroennoten-webpack-stream-git-patch-1-b24e730a
+346 silly fetchPackageMetaData Cloning into bare repository 'C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\git-github-com-jeroennoten-webpack-stream-git-patch-1-b24e730a'...
+346 silly fetchPackageMetaData Permission denied (publickey).
+346 silly fetchPackageMetaData fatal: Could not read from remote repository.
+346 silly fetchPackageMetaData
+346 silly fetchPackageMetaData Please make sure you have the correct access rights
+346 silly fetchPackageMetaData and the repository exists.
+346 silly fetchPackageMetaData
+346 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:202:12)
+346 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+346 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+346 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:852:16)
+346 silly fetchPackageMetaData     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
+346 silly fetchPackageMetaData   killed: false,
+346 silly fetchPackageMetaData   code: 128,
+346 silly fetchPackageMetaData   signal: null,
+346 silly fetchPackageMetaData   cmd: 'git -c core.longpaths=true clone --template=C:\\Users\\tspi.mis\\AppData\\Roaming\\npm-cache\\_git-remotes\\_templates --mirror git@github.com:jeroennoten/webpack-stream.git C:\\Users\\tspi.mis\\AppData\\Roaming\\npm-cache\\_git-remotes\\git-github-com-jeroennoten-webpack-stream-git-patch-1-b24e730a' }
+347 silly rollbackFailedOptional Starting
+348 silly rollbackFailedOptional Finishing
+349 silly runTopLevelLifecycles Starting
+350 silly runTopLevelLifecycles Finishing
+351 silly install printInstalled
+352 warn optional Skipping failed optional dependency /chokidar/fsevents:
+353 warn notsup Not compatible with your operating system or architecture: fsevents@1.0.14
+354 verbose stack Error: Command failed: git -c core.longpaths=true clone --template=C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:jeroennoten/webpack-stream.git C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\git-github-com-jeroennoten-webpack-stream-git-patch-1-b24e730a
+354 verbose stack Cloning into bare repository 'C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\git-github-com-jeroennoten-webpack-stream-git-patch-1-b24e730a'...
+354 verbose stack Permission denied (publickey).
+354 verbose stack fatal: Could not read from remote repository.
+354 verbose stack
+354 verbose stack Please make sure you have the correct access rights
+354 verbose stack and the repository exists.
+354 verbose stack
+354 verbose stack     at ChildProcess.exithandler (child_process.js:202:12)
+354 verbose stack     at emitTwo (events.js:106:13)
+354 verbose stack     at ChildProcess.emit (events.js:191:7)
+354 verbose stack     at maybeClose (internal/child_process.js:852:16)
+354 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
+355 verbose cwd C:\laragon\www\output_2016
+356 error Windows_NT 6.3.9600
+357 error argv "C:\\laragon\\bin\\nodejs\\node.exe" "C:\\laragon\\bin\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install"
+358 error node v6.3.0
+359 error npm  v3.10.3
+360 error code 128
+361 error Command failed: git -c core.longpaths=true clone --template=C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\_templates --mirror git@github.com:jeroennoten/webpack-stream.git C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\git-github-com-jeroennoten-webpack-stream-git-patch-1-b24e730a
+361 error Cloning into bare repository 'C:\Users\tspi.mis\AppData\Roaming\npm-cache\_git-remotes\git-github-com-jeroennoten-webpack-stream-git-patch-1-b24e730a'...
+361 error Permission denied (publickey).
+361 error fatal: Could not read from remote repository.
+361 error
+361 error Please make sure you have the correct access rights
+361 error and the repository exists.
+362 error If you need help, you may report this error at:
+362 error     <https://github.com/npm/npm/issues>
+363 verbose exit [ 1, true ]
